@@ -11,15 +11,14 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
+      <section className="">
+        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-xl text-gray-900">
           I'm Tyler, a product manager living in San Francisco. You can find me
           on <a href="https://www.twitter.com/tylermyracle">Twitter</a>.
-        </p>
-        <p>(This is just a placeholder and I need to fill things out)</p>
+        </div>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+      <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
+        <h2 className="font-medium text-2xl mb-4">Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

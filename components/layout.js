@@ -24,23 +24,23 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="">
         {home ? (
-          <>
+          <div className="mb-6 flex flex-col items-center">
             <img
               src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              className="rounded-full h-24 w-24 flex self-center justify-center"
               alt={name}
             />
-            <h1 className={utilStyles.heading2XL}>{name}</h1>
-          </>
+            <h1 className="mt-4 text-4xl">{name}</h1>
+          </div>
         ) : (
           <>
             <Link href="/">
               <a>
                 <img
                   src="/images/profile.jpg"
-                  classNmae={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  classNmae="rounded-full h-30 w-30 flex items-center justify-center"
                   alt={name}
                 />
               </a>
