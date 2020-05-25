@@ -35,22 +35,7 @@ export default function Layout({ children, home }) {
             <h1 className="mt-4 text-4xl">{name}</h1>
           </div>
         ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  classNmae="rounded-full h-30 w-30 flex items-center justify-center"
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={styles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
+          <></>
         )}
       </header>
       <main>{children}</main>
