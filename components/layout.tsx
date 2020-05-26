@@ -4,9 +4,15 @@ import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 
 const name = "Tyler Myracle";
-export const siteTitle = "Tyler's Site";
+export const siteTitle = "Tyler Myracle";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
