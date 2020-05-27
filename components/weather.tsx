@@ -10,6 +10,7 @@ import {
 
 export default function Weather({ weatherData }: { weatherData: any }) {
   let chartData: any = [];
+  console.log(weatherData);
   weatherData.daily.forEach((day: any) => {
     let singleDay: any = {};
     singleDay.formattedDate = new Date(day.dt * 1000).toLocaleDateString();
@@ -40,6 +41,18 @@ export default function Weather({ weatherData }: { weatherData: any }) {
   return (
     <div>
       <h3 className="font-medium text-2xl mb-4">Weather in Potrero Hill</h3>
+      <div className="weather-summary mb-4">
+        <div className="text-sm">
+          It's {weatherData.current.weather[0].main} and{" "}
+          {Math.round(weatherData.current.temp)}&#176; F
+        </div>
+        <div className="text-sm">
+          Kinda feels like {Math.round(weatherData.current.feels_like)}&#176; F
+          out there
+        </div>
+      </div>
+
+      <div className="text-md">Temperature Forecast</div>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
           data={chartData}
