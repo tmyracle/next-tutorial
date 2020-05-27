@@ -18,8 +18,6 @@ export default function Weather({ weatherData }: { weatherData: any }) {
     chartData.push(singleDay);
   });
 
-  console.log(chartData);
-
   const TiltedAxisLabel = (props: any) => {
     const { x, y, stroke, payload } = props;
     return (
