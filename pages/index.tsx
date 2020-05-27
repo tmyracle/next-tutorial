@@ -2,18 +2,22 @@ import Head from "next/head";
 import Link from "next/link";
 import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
+import Weather from "../components/weather";
 import utilStyles from "../styles/utils.module.scss";
 import { getSortedPostsData } from "../lib/posts";
+import { getWeatherData } from "../lib/weather";
 import { GetStaticProps } from "next";
 
 export default function Home({
   allPostsData,
+  weatherData,
 }: {
   allPostsData: {
     date: string;
     title: string;
     id: string;
-  }[];
+  };
+  weatherData: any[];
 }) {
   return (
     <Layout home>
@@ -42,15 +46,20 @@ export default function Home({
           ))}
         </ul>
       </section>
+      <section>
+        <Weather weatherData={weatherData} />
+      </section>
     </Layout>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
+  const weatherData = await getWeatherData();
   return {
     props: {
       allPostsData,
+      weatherData,
     },
   };
 };
