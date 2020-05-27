@@ -46,7 +46,7 @@ export default function Home({
           ))}
         </ul>
       </section>
-      <section>
+      <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
         <Weather weatherData={weatherData} />
       </section>
     </Layout>
