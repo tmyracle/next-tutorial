@@ -6,7 +6,7 @@ import Weather from "../components/weather";
 import utilStyles from "../styles/utils.module.scss";
 import { getSortedPostsData } from "../lib/posts";
 import { getWeatherData } from "../lib/weather";
-import { GetStaticProps } from "next";
+import { GetStaticProps, GetServerSideProps } from "next";
 
 export default function Home({
   allPostsData,
@@ -53,8 +53,9 @@ export default function Home({
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const allPostsData = getSortedPostsData();
+
   let weatherData = {};
   try {
     weatherData = await getWeatherData();
