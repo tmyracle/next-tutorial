@@ -10,7 +10,7 @@ import {
 
 export default function Weather({ weatherData }: { weatherData: any }) {
   let chartData: any = [];
-  console.log(weatherData);
+
   weatherData.daily.forEach((day: any) => {
     let singleDay: any = {};
     singleDay.formattedDate = new Date(day.dt * 1000).toLocaleDateString();
