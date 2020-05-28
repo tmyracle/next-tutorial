@@ -55,7 +55,13 @@ export default function Home({
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
-  const weatherData = await getWeatherData();
+  let weatherData = {};
+  try {
+    weatherData = await getWeatherData();
+  } catch (error) {
+    console.log(error);
+  }
+
   return {
     props: {
       allPostsData,
