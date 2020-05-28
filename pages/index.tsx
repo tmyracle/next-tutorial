@@ -17,7 +17,7 @@ export default function Home({
     title: string;
     id: string;
   }[];
-  weatherData: any[];
+  weatherData?: any[];
 }) {
   return (
     <Layout home>

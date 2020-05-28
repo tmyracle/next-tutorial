@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from "recharts";
 
-export default function Weather({ weatherData }: { weatherData: any }) {
+export default function Weather({ weatherData }: { weatherData?: any }) {
   let chartData: any = [];
 
   weatherData.daily.forEach((day: any) => {
@@ -19,7 +19,7 @@ export default function Weather({ weatherData }: { weatherData: any }) {
     chartData.push(singleDay);
   });
 
-  const TiltedAxisLabel = (props: any) => {
+  const TiltedAxisLabel = (props?: any) => {
     const { x, y, stroke, payload } = props;
     return (
       <g transform={`translate(${x},${y})`}>
