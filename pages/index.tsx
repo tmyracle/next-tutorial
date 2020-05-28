@@ -16,7 +16,7 @@ export default function Home({
     date: string;
     title: string;
     id: string;
-  };
+  }[];
   weatherData: any[];
 }) {
   return (
