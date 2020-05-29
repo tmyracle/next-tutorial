@@ -27,7 +27,12 @@ export default function Home({
       <section className="">
         <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-xl text-gray-900">
           I'm Tyler, a product manager living in San Francisco. You can find me
-          on <a href="https://www.twitter.com/tylermyracle">Twitter</a>.
+          on <a href="https://www.twitter.com/tylermyracle">Twitter</a>. My
+          current resume can be found&nbsp;
+          <Link href="/resume">
+            <a>here</a>
+          </Link>
+          .
         </div>
       </section>
       <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
