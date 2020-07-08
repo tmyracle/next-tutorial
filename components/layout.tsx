@@ -17,22 +17,19 @@ export default function Layout({
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learning how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Tyler Myracle's personal website" />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
             siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fibb.co%2Fqj4WbQF`}
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className="">
         {home ? (
-          <div className="mb-6 flex flex-col items-center">
+          <div className="mb-2 flex flex-col items-center">
             <img
               src="/images/profile.jpg"
               className="rounded-full h-24 w-24 flex self-center justify-center"

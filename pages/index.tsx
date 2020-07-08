@@ -2,28 +2,35 @@ import Head from "next/head";
 import Link from "next/link";
 import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
-import Weather from "../components/weather";
 import utilStyles from "../styles/utils.module.scss";
 import { getSortedPostsData } from "../lib/posts";
-import { getWeatherData } from "../lib/weather";
 import { GetStaticProps, GetServerSideProps } from "next";
 
 export default function Home({
   allPostsData,
-  weatherData,
 }: {
   allPostsData: {
     date: string;
     title: string;
     id: string;
   }[];
-  weatherData?: any[];
 }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div className="flex justify-center">
+        <div className="text-center p-2">
+          <Link href="/about">About</Link>
+        </div>
+        <div className="text-center p-2">
+          <Link href="/">Writing</Link>
+        </div>
+        <div className="text-center p-2">
+          <Link href="/books">Books</Link>
+        </div>
+      </div>
       <section className="">
         <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-xl text-gray-900">
           I'm Tyler, a product manager living in San Francisco. You can find me
@@ -51,9 +58,6 @@ export default function Home({
           ))}
         </ul>
       </section>
-      <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
-        <Weather weatherData={weatherData} />
-      </section>
     </Layout>
   );
 }
@@ -61,17 +65,9 @@ export default function Home({
 export const getServerSideProps: GetServerSideProps = async () => {
   const allPostsData = getSortedPostsData();
 
-  let weatherData = {};
-  try {
-    weatherData = await getWeatherData();
-  } catch (error) {
-    console.log(error);
-  }
-
   return {
     props: {
       allPostsData,
-      weatherData,
     },
   };
 };
