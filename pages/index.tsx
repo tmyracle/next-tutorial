@@ -7,7 +7,7 @@ import { getSortedPostsData } from "../lib/posts";
 import { GetStaticProps, GetServerSideProps } from "next";
 
 export default function Home({
-  allPostsData,
+  allPostsData
 }: {
   allPostsData: {
     date: string;
@@ -22,30 +22,31 @@ export default function Home({
       </Head>
       <div className="flex justify-center">
         <div className="text-center p-2">
-          <Link href="/about">About</Link>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
         </div>
         <div className="text-center p-2">
-          <Link href="/">Writing</Link>
+          <Link href="/writing">
+            <a>Writing</a>
+          </Link>
         </div>
         <div className="text-center p-2">
-          <Link href="/books">Books</Link>
+          <Link href="/books">
+            <a>Books</a>
+          </Link>
         </div>
       </div>
       <section className="">
-        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-xl text-gray-900">
+        <div className="max-w-md mx-auto mt-2 p-6 bg-white rounded-lg shadow-xl text-gray-900">
           I'm Tyler, a product manager living in San Francisco. You can find me
-          on <a href="https://www.twitter.com/tylermyracle">Twitter</a>. My
-          current resume can be found&nbsp;
-          <Link href="/resume">
-            <a>here</a>
-          </Link>
-          .
+          on <a href="https://www.twitter.com/tylermyracle">Twitter</a>.
         </div>
       </section>
       <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
-        <h2 className="font-medium text-2xl mb-4">Blog</h2>
+        <h2 className="font-medium text-2xl mb-4">Recent posts</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.slice(0, 3).map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
@@ -67,7 +68,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
   return {
     props: {
-      allPostsData,
-    },
+      allPostsData
+    }
   };
 };
