@@ -38,13 +38,13 @@ export default function Home({
         </div>
       </div>
       <section className="">
-        <div className="max-w-md mx-auto mt-2 p-6 bg-white rounded-lg shadow-xl text-gray-900">
+        <div className="max-w-md mx-auto mt-2 p-6 bg-white rounded-lg shadow-md text-gray-900">
           I'm Tyler, a product manager living in San Francisco. You can find me
           on <a href="https://www.twitter.com/tylermyracle">Twitter</a>.
         </div>
       </section>
       <section>
-        <div className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
+        <div className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-md">
           <h2 className="font-medium text-2xl mb-4">Currently learning</h2>
           <ul>
             <li>
@@ -79,7 +79,7 @@ export default function Home({
           </ul>
         </div>
       </section>
-      <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
+      <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-md">
         <h2 className="font-medium text-2xl mb-4">Recent posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.slice(0, 3).map(({ id, date, title }) => (
