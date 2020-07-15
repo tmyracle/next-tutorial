@@ -43,6 +43,42 @@ export default function Home({
           on <a href="https://www.twitter.com/tylermyracle">Twitter</a>.
         </div>
       </section>
+      <section>
+        <div className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
+          <h2 className="font-medium text-2xl mb-4">Currently learning</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.coursera.org/specializations/data-structures-algorithms?"
+                target="_blank"
+              >
+                Data Structures and Algorithms Specialization
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.reforge.com/advanced-growth-strategy-series"
+                target="_blank"
+              >
+                Reforge Advanced Growth Strategy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.udemy.com/course/freelance-web-design-from-design-to-development-to-making-money/"
+                target="_blank"
+              >
+                Web Design with Webflow and Figma
+              </a>
+            </li>
+            <li>
+              <a href="https://cs193p.sites.stanford.edu/" target="_blank">
+                Stanford CS193p - iOS Development
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-xl">
         <h2 className="font-medium text-2xl mb-4">Recent posts</h2>
         <ul className={utilStyles.list}>
