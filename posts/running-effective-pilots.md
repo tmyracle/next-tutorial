@@ -5,7 +5,7 @@ date: "2020-06-20"
 
 One of the critical skills to have when executing a B2B SaaS go-to-market motion is the ability to run an effective pilot. This could be a free “trial” or a paid pilot, the same principles apply. The primary concept here is that enterprise buyers are very hesitate to make a large technology purchase without getting to test drive the product first and see how it fits within their organization. The goal as a SaaS business is to convert this small pilot opportunity into an opportunity that has a large TCV, one that is at least 5x the sales and marketing cost to close the deal.
 
-Here are the main things to be congnizant of when putting together a pilot program for customers:
+Here are the main things to be cognizant of when putting together a pilot program for customers:
 
 **Opportunity qualification**
 One of the first things to do is determine if this is an existing project with dedicated budget or if it’s an opportunistic purchase. Opportunistic purchases are when the customer wasn’t actively looking for a solution, but are intrigued by what your product is and the value it can provide. Opportunistic buyers can often turn into “science projects” that don’t have meaningful budget behind them for a real purchase. Ideally we're looking for customers that have an active and budgeted project to find a solution to whatever problem they're facing, but opportunistic buyers can also lead to great deals. If the customer doesn't have a budgeted project to solve whatever problem your product solves then make sure they have budget to make the _real_ purchase. Which leads to the next point...
