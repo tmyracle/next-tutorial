@@ -19,7 +19,7 @@ export default function Post({
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className="bg-white rounded-lg shadow-md p-6">
+      <article className="bg-white rounded-lg shadow-md p-6 max-w-screen-lg">
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
