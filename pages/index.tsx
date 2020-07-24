@@ -7,7 +7,7 @@ import { getSortedPostsData } from "../lib/posts";
 import { GetStaticProps, GetServerSideProps } from "next";
 
 export default function Home({
-  allPostsData
+  allPostsData,
 }: {
   allPostsData: {
     date: string;
@@ -39,13 +39,17 @@ export default function Home({
       </div>
       <section className="">
         <div className="max-w-md mx-auto mt-2 p-6 bg-white rounded-lg shadow-md text-gray-900">
-          I'm Tyler, a product manager living in San Francisco. You can find me
-          on <a href="https://www.twitter.com/tylermyracle">Twitter</a>.
+          I'm Tyler, a product manager living in San Francisco. I built some
+          stuff at Samsara and RigUp. You can find me on{" "}
+          <a href="https://www.twitter.com/tylermyracle" target="_blank">
+            Twitter
+          </a>
+          .
         </div>
       </section>
       <section>
         <div className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-md">
-          <h2 className="font-medium text-2xl mb-4">Currently learning</h2>
+          <h2 className="font-medium text-xl mb-4">Currently learning</h2>
           <ul>
             <li>
               <a
@@ -80,7 +84,7 @@ export default function Home({
         </div>
       </section>
       <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-md">
-        <h2 className="font-medium text-2xl mb-4">Recent posts</h2>
+        <h2 className="font-medium text-xl mb-4">Recent posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.slice(0, 3).map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -104,7 +108,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
   return {
     props: {
-      allPostsData
-    }
+      allPostsData,
+    },
   };
 };
