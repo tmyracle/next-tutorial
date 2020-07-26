@@ -11,7 +11,6 @@ export default function About() {
         </Head>
         <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
           <div className="text-xl">About</div>
-          <div className="mt-4 mb-4">Here's a little bit about me:</div>
           <p>
             Most recently I was a Senior Product Manager at Samsara where I
             worked on an IoT product for the manufacturing industry. Prior to 
@@ -19,7 +18,7 @@ export default function About() {
             I enjoy playing golf, making music, and taking photos.
           </p>
           <div>
-            <div className="mt-8 mb-4 text-xl">
+            <div className="mt-4 mb-4 text-lg">
               Here's a brief summary of my previous roles:
             </div>
             <div className="mb-4">

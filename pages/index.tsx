@@ -32,6 +32,11 @@ export default function Home({
           </Link>
         </div>
         <div className="text-center p-2">
+          <a href="https://www.github.com/tmyracle" target="_blank">
+            Code
+          </a>
+        </div>
+        <div className="text-center p-2">
           <Link href="/books">
             <a>Books</a>
           </Link>
