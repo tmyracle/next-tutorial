@@ -20,6 +20,23 @@ export default function Books() {
               <li>
                 <a
                   target="_blank"
+                  href="https://www.amazon.com/Courage-Be-Disliked-Phenomenon-Happiness/dp/1501197274/"
+                >
+                  The Courage to Be Disliked
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862/"
+                >
+                  Working In Public: The Making and Maintenance of Open Source
+                  Software
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
                   href="https://www.amazon.com/Masters-Doom-Created-Transformed-Culture-ebook/dp/B000FBFNL0/"
                 >
                   Masters of Doom

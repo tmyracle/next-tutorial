@@ -39,48 +39,12 @@ export default function Home({
       </div>
       <section className="">
         <div className="max-w-md mx-auto mt-2 p-6 bg-white rounded-lg shadow-md text-gray-900">
-          I'm Tyler, a product manager living in San Francisco. I built some
-          stuff at Samsara and RigUp. You can find me on{" "}
+          I'm Tyler, a product manager and angel investor living in San
+          Francisco. I built some stuff at Samsara and RigUp. You can find me on{" "}
           <a href="https://www.twitter.com/tylermyracle" target="_blank">
             Twitter
           </a>
           .
-        </div>
-      </section>
-      <section>
-        <div className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-md">
-          <h2 className="font-medium text-xl mb-4">Currently learning</h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.coursera.org/specializations/data-structures-algorithms?"
-                target="_blank"
-              >
-                Data Structures and Algorithms Specialization
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.reforge.com/advanced-growth-strategy-series"
-                target="_blank"
-              >
-                Reforge Advanced Growth Strategy
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.udemy.com/course/freelance-web-design-from-design-to-development-to-making-money/"
-                target="_blank"
-              >
-                Web Design with Webflow and Figma
-              </a>
-            </li>
-            <li>
-              <a href="https://cs193p.sites.stanford.edu/" target="_blank">
-                Stanford CS193p - iOS Development
-              </a>
-            </li>
-          </ul>
         </div>
       </section>
       <section className="max-w-md mx-auto mt-6 p-6 bg-white rounded-lg shadow-md">
