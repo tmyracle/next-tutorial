@@ -10,7 +10,6 @@ export default function About() {
         </Head>
         <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
           <div className="text-xl">About</div>
-          <div className="mt-4 mb-4">Here's a little bit about me:</div>
           <p>
             I was born in raised in a city of about 100k in north Texas called
             Wichita Falls. After high school I went to Texas A&M University
