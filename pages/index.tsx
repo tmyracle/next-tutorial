@@ -45,9 +45,21 @@ export default function Home({
       <section className="">
         <div className="max-w-md mx-auto mt-2 p-6 bg-white rounded-lg shadow-md text-gray-900">
           I'm Tyler, a product manager and angel investor living in San
-          Francisco. I built some stuff at Samsara and RigUp. You can find me on{" "}
+          Francisco. I'm currently working on Messenger privacy at Facebook. I
+          built some stuff at Samsara and RigUp. You can find me on{" "}
           <a href="https://www.twitter.com/tylermyracle" target="_blank">
             Twitter
+          </a>
+          .
+          <br />
+          <br />I also keep a public Notion that serves as a more up to date
+          collection of notes, rambling thoughts, and other oddities. You can
+          find that{" "}
+          <a
+            href="https://www.notion.so/Tyler-Myracle-16186fc865e843d4bddb26479051ee67"
+            target="_blank"
+          >
+            here
           </a>
           .
         </div>

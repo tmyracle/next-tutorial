@@ -46,9 +46,9 @@ export default function About() {
           <p>
             My first experience in technology was at RigUp where I joined as a
             very early employee. I was fortunate that I had domain knowledge in
-            the energy industry and could make use of that to help shape
-            potential products. I had also spent some of my downtime when I was
-            working on rigs learning Ruby on Rails and basic web development.
+            the energy industry and could make use of that to help shape our
+            products. I had also spent some of my downtime when I was working on
+            rigs learning Ruby on Rails and basic web development.
           </p>
           <p>
             My interest in building software combined with my domain expertise
@@ -77,9 +77,11 @@ export default function About() {
             decided to join Facebook at a Product Manager.
           </p>
           <p>
-            So that's the story up to this point. I'm starting at Facebook in
-            November 2020 and will be working on my product skills and doing
-            some angel investing for the foreseeable future.
+            So for now I'm working on Messenger privacy at Facebook. What does
+            that mean? Our team focuses on things like end-to-end encryption
+            (E2EE), privacy controls/settings, and ephemerality. Right now I'm
+            spending my nights and weekends learning how to build iOS apps and
+            how distributed systems work.
           </p>
         </div>
       </div>
